@@ -1,5 +1,4 @@
-Master Emergency Situations -
-A game for Toddlers
+Master Emergency Situations - A game for Toddlers
 ========
 Our app-idea is a very minimalistic and simple to use touch-interface mainly for toddlers.
 Toddlers can master simple situations playfully. Thus they learn the different tools and the humans
