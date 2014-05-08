@@ -1,6 +1,6 @@
-Master Emergency Situations - A game for Toddlers
+Master Emergency Situations -
+A game for Toddlers
 ========
-
 Our app-idea is a very minimalistic and simple to use touch-interface mainly for toddlers.
 Toddlers can master simple situations playfully. Thus they learn the different tools and the humans
 who interact with.
@@ -25,7 +25,7 @@ Installation on Android
 -------
 
 You need to download the Kivy-Launcher from the app-store.
-You can copy/paste this directory into /sdcard/kivy/ in your
+You can then copy/paste the files into /sdcard/kivy/ on your
 android device.
 
 
