@@ -1,0 +1,3 @@
+title=kivytest
+author=hanswurtst
+orientation=landscape
