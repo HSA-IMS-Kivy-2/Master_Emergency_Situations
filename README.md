@@ -4,9 +4,7 @@ Our app-idea is a very minimalistic and simple to use touch-interface mainly for
 Toddlers can master simple situations playfully. Thus they learn the different tools and the humans
 who interact with.
 
-UI-Setup:
-Left:	|Center:			      |	Right:
-Tools	|Situation to solve	|	Human
+UI-Setup: Left: Tools	| Center: Situation to solve | Right: Humans
 
 Each situation will be solved with an unique combination of two cards. One tool-card and one human-card.
 
