@@ -1,0 +1,30 @@
+
+<Person>:
+	on_touch_move: self.setActive(self)
+	on_touch_up: self.personUp()
+	Image:
+		id: img
+		size: root.width, root.width
+		canvas.before:
+			Color:
+    			rgba: 1,1,1,1
+			BorderImage:
+    			source: 'res/shadow32.png'
+    			border: (36,36,36,36)
+    			size:(self.width+72, self.height+72)
+    			pos: (-36,-36)
+			
+<Tool>:
+	on_touch_move: self.setActive(self)
+	on_touch_up: self.toolUp()
+	Image:
+		id: img
+		size: root.width, root.width
+		canvas.before:
+			Color:
+    			rgba: 1,1,1,1
+			BorderImage:
+    			source: 'res/shadow32.png'
+    			border: (36,36,36,36)
+    			size:(self.width+72, self.height+72)
+    			pos: (-36,-36)

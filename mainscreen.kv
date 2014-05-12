@@ -1,0 +1,46 @@
+#:import find kivy.resources
+
+<TopLabel@Label>:
+	halign: 'left'
+	valign: 'middle'
+	color: [1,1,1,1]
+	text_size: self.size
+	markup: True
+
+GridLayout:
+	rows:2
+	BoxLayout:
+		orientation: 'horizontal'
+		padding: '2dp'
+		spacing: '10dp'
+		size_hint_y: None
+		height: '48sp'		
+		#http://kivy.org/docs/guide/widgets.html#adding-a-background-to-a-layout
+		canvas.before:
+	        Color:
+	            rgba: 0, 0.66, 0.69, 1
+	        Rectangle:
+	            pos: self.pos
+	            size: self.size
+		Image:
+			allow_stretch: True
+			size_hint_x: 0.1
+            pos_hint: {'x': 0}
+			source: 'icon.png'
+		TopLabel:
+			id: title
+			font_name: 'res/Chewy.ttf'
+			font_size: 24
+			bold: False
+		Button:
+			size_hint_x: None
+			width: self.height
+			#converted as hexcodepoints to decimal by using http://rishida.net/tools/conversion/
+			text: unichr(61529)
+			font_name: find.resource_find('res/fontawesome-webfont.ttf')
+			font_size: 42
+			background_normal: ''
+			background_color: 0, 0.66, 0.69, 1
+			on_press: app.showHelp()
+	ScreenManager:
+		id: screen_manager

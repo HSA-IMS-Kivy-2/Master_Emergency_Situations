@@ -1,0 +1,86 @@
+<Person,Tool>:
+	auto_bring_to_front: True
+	do_rotation: False
+	do_scale: False	
+	size_hint_x: None
+	size_hint_y: None
+	#size: 200,200
+	#size: root.width/5, root.width/5
+	
+<Kartenstapel@RelativeLayout>:
+	size_hint_x: None
+	size_hint_y: None
+	#size: 300,300
+	#pos_hint: None
+
+#rootwidget aus klassenaufruf (FloatLayout)
+<Level>:
+    Image:
+		id: bg
+		source: 'res/tisch_holz_bg.jpg'
+		#keep_ratio: True
+		size_hint: None, None
+		size: root.width*2, root.height*2
+		pos: -root.width/2, -root.height/2
+    AnchorLayout:
+		anchor_x: "center"
+		anchor_y: "center"		
+		Image:
+			id: sceneImage			
+		Button:
+			size_hint: (0.5,1)
+			size: root.width/4, root.width/4
+			id: target1
+			disabled: True
+			background_color: (0,1,1,0.3)
+    AnchorLayout:    	    	
+    	anchor_x: "left"
+		anchor_y: "center"
+		#size_hint_x: 0.2
+	    Kartenstapel:
+	    	id: tStapel
+			Tool:		
+				id: tool1
+				size: root.width/5, root.width/5
+				pos: root.width*0.02, root.height*0.13
+				rotation: 1
+			Tool:		
+				id: tool2
+				rotation: 3
+				size: root.width/5, root.width/5
+				pos: root.width*0.016, -root.height*0.15
+            Tool:
+				id: tool3
+				rotation: -2
+				size: root.width/5, root.width/5
+				pos: root.width*0.018, -root.height*0.4
+	AnchorLayout:
+    	anchor_x: "right"
+		anchor_y: "center"    	
+    	#size_hint_x: None
+    	pos: -root.width/4, 0
+		Kartenstapel: 
+			id: pStapel
+			Person:		
+				id: person1
+				pos: 0,0
+				size: root.width/5, root.width/5
+				pos: root.width*0.02, root.height*0.13
+				rotation: 1
+			Person:		
+				id: person2
+				pos: 0,0
+				size: root.width/5, root.width/5
+				pos: root.width*0.016, -root.height*0.15
+				rotation: -4					
+			Person:		
+				id: person3
+				pos: 0,0
+				size: root.width/5, root.width/5
+				pos: root.width*0.018, -root.height*0.4
+				rotation: 4
+	AnchorLayout:
+		size_hint: (1, 1)
+		anchor_x: "center"
+		anchor_y: "center"
+		id: popupanchor
